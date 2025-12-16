@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPX POI Finder</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      padding: 20px;
+    }
+    .container {
+      max-width: 900px;
+      text-align: center;
+    }
+    .logo {
+      font-size: 5rem;
+      margin-bottom: 20px;
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    }
+    .subtitle {
+      font-size: 1.3rem;
+      margin-bottom: 40px;
+      opacity: 0.95;
+    }
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 40px;
+    }
+    .badge {
+      padding: 12px 24px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 30px;
+      backdrop-filter: blur(10px);
+      font-weight: 600;
+    }
+    .cta {
+      display: inline-block;
+      padding: 18px 50px;
+      background: white;
+      color: #667eea;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1.2rem;
+      margin: 10px;
+      transition: all 0.3s;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+    .cta:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    }
+    .cta.secondary {
+      background: transparent;
+      color: white;
+      border: 2px solid white;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      margin-top: 60px;
+    }
+    .feature {
+      background: rgba(255,255,255,0.15);
+      padding: 35px 25px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      transition: transform 0.3s;
+    }
+    .feature:hover {
+      transform: translateY(-10px);
+      background: rgba(255,255,255,0.2);
+    }
+    .feature-icon {
+      font-size: 3.5rem;
+      margin-bottom: 15px;
+    }
+    .feature h3 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+    .footer {
+      margin-top: 60px;
+      padding-top: 30px;
+      border-top: 1px solid rgba(255,255,255,0.3);
+      opacity: 0.8;
+    }
+    .footer a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: 500;
+      transition: opacity 0.3s;
+    }
+    .footer a:hover {
+      opacity: 0.7;
+    }
+    @media (max-width: 768px) {
+      h1 { font-size: 2rem; }
+      .subtitle { font-size: 1.1rem; }
+      .logo { font-size: 3.5rem; }
+      .features { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">🗺️📍</div>
+    <h1>GPX POI Finder</h1>
+    <p class="subtitle">Trouvez les POI le long de vos traces GPX avec horaires temps réel 🟢🔴</p>
+    
+    <div class="badges">
+      <span class="badge">🚴 Import Strava</span>
+      <span class="badge">🟢 Horaires Temps Réel</span>
+      <span class="badge">🌍 4 Langues</span>
+      <span class="badge">💎 Freemium 2.99€/an</span>
+    </div>
+    
+    <div>
+      <a href="https://play.google.com/store/apps" class="cta">
+        📱 Télécharger sur Play Store
+      </a>
+      <a href="#features" class="cta secondary">
+        ✨ Découvrir les Fonctionnalités
+      </a>
+    </div>
+    
+    <div class="features" id="features">
+      <div class="feature">
+        <div class="feature-icon">📁</div>
+        <h3>Import GPX</h3>
+        <p>Chargez vos traces locales ou importez directement depuis Strava</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🔍</div>
+        <h3>10 Catégories</h3>
+        <p>Gares, refuges, eau, toilettes, restaurants, pharmacies...</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🟢</div>
+        <h3>Horaires Live</h3>
+        <p>Statut d'ouverture en temps réel avec horaires détaillés</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🗺️</div>
+        <h3>Distribution Équilibrée</h3>
+        <p>500 POI répartis intelligemment sur tout le parcours</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🧭</div>
+        <h3>Mode GPS</h3>
+        <p>Recherche autour de vous sans trace GPX</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🌍</div>
+        <h3>Multilingue</h3>
+        <p>Français, Anglais, Allemand, Espagnol</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">💎</div>
+        <h3>Freemium Généreux</h3>
+        <p>Gratuit : 3 GPX, 5 recherches/jour. PRO : Illimité à 2.99€/an</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🚴</div>
+        <h3>Intégration Strava</h3>
+        <p>Import direct de vos activités Strava (PRO)</p>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <a href="privacy/">📜 Privacy Policy</a>
+      <a href="mailto:damerval.kevin@gmail.com">✉️ Contact</a>
+      <a href="https://github.com/VOTRE_USERNAME/VOTRE_REPO">💻 GitHub</a>
+    </div>
+  </div>
+</body>
+</html>
