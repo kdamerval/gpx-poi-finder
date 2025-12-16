@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Politique de Confidentialité - GPX POI Finder</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      line-height: 1.8;
+      color: #333;
+      background: #f9f9f9;
+    }
+    .header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 40px 30px;
+      border-radius: 20px;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    h1 { 
+      margin: 0 0 10px 0;
+      font-size: 2.5rem;
+    }
+    .meta { 
+      opacity: 0.9;
+      font-size: 0.95rem;
+    }
+    .lang-switcher {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .lang-switcher a {
+      margin: 5px;
+      padding: 10px 20px;
+      background: #f5f5f5;
+      text-decoration: none;
+      color: #667eea;
+      border-radius: 8px;
+      display: inline-block;
+      transition: all 0.3s;
+      font-weight: 600;
+    }
+    .lang-switcher a:hover {
+      background: #667eea;
+      color: white;
+    }
+    .lang-switcher a.active {
+      background: #667eea;
+      color: white;
+    }
+    .content {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+    }
+    h2 { 
+      color: #667eea;
+      margin-top: 40px;
+      font-size: 1.8rem;
+      border-bottom: 3px solid #667eea;
+      padding-bottom: 10px;
+    }
+    h3 {
+      color: #764ba2;
+      margin-top: 25px;
+      font-size: 1.3rem;
+    }
+    ul {
+      margin: 15px 0;
+      padding-left: 25px;
+    }
+    li {
+      margin: 10px 0;
+    }
+    .highlight {
+      background: #fff3cd;
+      padding: 20px;
+      border-left: 4px solid #ffc107;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+    .success {
+      background: #d4edda;
+      border-left-color: #28a745;
+    }
+    .danger {
+      background: #f8d7da;
+      border-left-color: #dc3545;
+    }
+    a {
+      color: #667eea;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 50px;
+      padding-top: 30px;
+      border-top: 2px solid #e0e0e0;
+      color: #666;
+    }
+    @media (max-width: 768px) {
+      body { padding: 20px 10px; }
+      .content { padding: 25px 20px; }
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>🔒 Politique de Confidentialité</h1>
+    <p class="meta">GPX POI Finder · Dernière mise à jour : 16 décembre 2025</p>
+  </div>
+
+  <div class="lang-switcher">
+    🌍 <strong>Langue :</strong> 
+    <a href="index.html" class="active">🇫🇷 Français</a>
+    <a href="en.html">🇬🇧 English</a>
+    <a href="de.html">🇩🇪 Deutsch</a>
+    <a href="es.html">🇪🇸 Español</a>
+  </div>
+
+  <div class="content">
+    <h2>1. Introduction</h2>
+    <p>
+      <strong>GPX POI Finder</strong> ("nous", "notre", "l'application") respecte votre vie privée. 
+      Cette politique explique comment nous collectons, utilisons et protégeons vos données personnelles.
+    </p>
+
+    <h2>2. Données Collectées</h2>
+
+    <h3>📍 Localisation GPS (Optionnelle)</h3>
+    <div class="highlight success">
+      <ul>
+        <li>✅ Utilisée uniquement pour la fonction "Autour de moi"</li>
+        <li>✅ <strong>Jamais transmise</strong> à des serveurs externes</li>
+        <li>✅ Stockée temporairement sur l'appareil uniquement</li>
+        <li>✅ Vous pouvez refuser l'accès à tout moment dans les paramètres</li>
+      </ul>
+    </div>
+
+    <h3>📁 Fichiers GPX</h3>
+    <ul>
+      <li>Restent sur votre appareil</li>
+      <li><strong>Jamais uploadés</strong> sur nos serveurs</li>
+      <li>Analysés localement uniquement</li>
+      <li>Supprimés automatiquement à la fermeture de l'application</li>
+    </ul>
+
+    <h3>⚙️ Préférences Locales</h3>
+    <ul>
+      <li>Langue sélectionnée</li>
+      <li>Compteurs freemium (nombre de GPX chargés, recherches effectuées)</li>
+      <li>Statut PRO (si abonnement actif)</li>
+      <li>Tokens Strava (si connecté)</li>
+      <li>Stockées dans localStorage ou Capacitor Preferences</li>
+    </ul>
+
+    <h2>3. Services Tiers</h2>
+
+    <h3>🗺️ OpenStreetMap / Overpass API</h3>
+    <ul>
+      <li><strong>Utilisation :</strong> Recherche de POI (points d'intérêt)</li>
+      <li><strong>Données envoyées :</strong> Coordonnées GPS de la trace (anonymes)</li>
+      <li><strong>Politique :</strong> <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank">osmfoundation.org/privacy</a></li>
+    </ul>
+
+    <h3>🚴 Strava (Optionnel - PRO uniquement)</h3>
+    <ul>
+      <li><strong>Connexion :</strong> OAuth 2.0 sécurisé</li>
+      <li><strong>Accès :</strong> Lecture seule de vos activités</li>
+      <li><strong>Stockage :</strong> Tokens chiffrés localement</li>
+      <li><strong>Révocation :</strong> À tout moment depuis l'app ou <a href="https://www.strava.com/settings/apps" target="_blank">strava.com/settings/apps</a></li>
+      <li><strong>Politique Strava :</strong> <a href="https://www.strava.com/legal/privacy" target="_blank">strava.com/legal/privacy</a></li>
+    </ul>
+
+    <h3>💳 RevenueCat (Achats In-App)</h3>
+    <ul>
+      <li><strong>Utilisation :</strong> Gestion des abonnements PRO</li>
+      <li><strong>Données :</strong> ID utilisateur anonyme, statut abonnement</li>
+      <li><strong>Conformité :</strong> RGPD, CCPA</li>
+      <li><strong>Politique :</strong> <a href="https://www.revenuecat.com/privacy" target="_blank">revenuecat.com/privacy</a></li>
+    </ul>
+
+    <h3>🗺️ Google Maps (Liens Externes)</h3>
+    <ul>
+      <li><strong>Utilisation :</strong> Boutons de navigation GPS</li>
+      <li><strong>Note :</strong> Vous quittez l'application, soumis à la politique Google</li>
+    </ul>
+
+    <h2>4. Utilisation des Données</h2>
+
+    <div class="highlight success">
+      <strong>✅ Ce que nous FAISONS :</strong>
+      <ul>
+        <li>Fournir les fonctionnalités de recherche POI</li>
+        <li>Gérer les limites freemium (compteurs locaux)</li>
+        <li>Sauvegarder vos préférences (langue, tutoriel vu)</li>
+        <li>Synchroniser votre statut PRO</li>
+      </ul>
+    </div>
+
+    <div class="highlight danger">
+      <strong>❌ Ce que nous NE FAISONS JAMAIS :</strong>
+      <ul>
+        <li>Vendre vos données à des tiers</li>
+        <li>Afficher de la publicité</li>
+        <li>Tracker vos déplacements</li>
+        <li>Collecter des données sans votre consentement</li>
+        <li>Utiliser des cookies de tracking</li>
+      </ul>
+    </div>
+
+    <h2>5. Sécurité</h2>
+    <ul>
+      <li>🔒 <strong>HTTPS</strong> : Toutes les connexions sont chiffrées</li>
+      <li>🔐 <strong>Tokens OAuth</strong> : Stockés de manière sécurisée</li>
+      <li>🚫 <strong>Pas de serveur</strong> : Aucune donnée sensible stockée en ligne</li>
+      <li>🛡️ <strong>Permissions minimales</strong> : Nous demandons uniquement ce qui est nécessaire</li>
+    </ul>
+
+    <h2>6. Vos Droits (RGPD)</h2>
+    <p>Conformément au RGPD, vous disposez des droits suivants :</p>
+    <ul>
+      <li><strong>Droit d'accès :</strong> Consultez vos données dans les paramètres de l'app</li>
+      <li><strong>Droit de rectification :</strong> Modifiez vos préférences à tout moment</li>
+      <li><strong>Droit de suppression :</strong> Désinstallez l'app ou effacez les données (Paramètres Android)</li>
+      <li><strong>Droit d'opposition :</strong> Refusez l'accès GPS ou déconnectez Strava</li>
+      <li><strong>Droit à la portabilité :</strong> Exportez vos traces GPX à tout moment</li>
+    </ul>
+
+    <h2>7. Conservation des Données</h2>
+    <table style="width:100%; border-collapse: collapse; margin: 20px 0;">
+      <tr style="background: #f5f5f5;">
+        <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Type de Données</th>
+        <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Durée de Conservation</th>
+      </tr>
+      <tr>
+        <td style="padding: 12px; border: 1px solid #ddd;">Traces GPX</td>
+        <td style="padding: 12px; border: 1px solid #ddd;">Supprimées à la fermeture de l'app</td>
+      </tr>
+      <tr>
+        <td style="padding: 12px; border: 1px solid #ddd;">Préférences utilisateur</td>
+        <td style="padding: 12px; border: 1px solid #ddd;">Jusqu'à désinstallation</td>
+      </tr>
+      <tr>
+        <td style="padding: 12px; border: 1px solid #ddd;">Tokens Strava</td>
+        <td style="padding: 12px; border: 1px solid #ddd;">Révocables à tout moment</td>
+      </tr>
+      <tr>
+        <td style="padding: 12px; border: 1px solid #ddd;">Statut PRO</td>
+        <td style="padding: 12px; border: 1px solid #ddd;">Durée de l'abonnement</td>
+      </tr>
+    </table>
+
+    <h2>8. Transferts Internationaux</h2>
+    <p>
+      Les services tiers (OpenStreetMap, Strava, RevenueCat) peuvent stocker des données 
+      en dehors de l'UE. Tous sont conformes RGPD avec clauses contractuelles types.
+    </p>
+
+    <h2>9. Mineurs</h2>
+    <p>
+      Cette application n'est pas destinée aux enfants de moins de 13 ans. 
+      Nous ne collectons pas sciemment de données d'enfants.
+    </p>
+
+    <h2>10. Modifications</h2>
+    <p>
+      Nous pouvons mettre à jour cette politique. Les changements significatifs seront 
+      notifiés dans l'application. Date de dernière modification en haut de cette page.
+    </p>
+
+    <h2>11. Contact</h2>
+    <div class="highlight">
+      <p><strong>Pour toute question concernant cette politique ou vos données :</strong></p>
+      <p>
+        📧 Email : <a href="mailto:damerval.kevin@gmail.com">damerval.kevin@gmail.com</a><br>
+        🌐 Site : <a href="../">gpxpoifinder.app</a><br>
+        💻 GitHub : <a href="https://github.com/VOTRE_USERNAME/VOTRE_REPO">Code source</a>
+      </p>
+      <p style="margin-top: 15px; font-size: 0.9rem; opacity: 0.8;">
+        Nous nous engageons à répondre dans les 48h ouvrées.
+      </p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>
+      GPX POI Finder © 2025 · 
+      <a href="../">🏠 Accueil</a> · 
+      <a href="mailto:damerval.kevin@gmail.com">✉️ Contact</a>
+    </p>
+  </div>
+</body>
+</html>
