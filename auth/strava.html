@@ -150,10 +150,14 @@
         
         // Android Custom URL Scheme
         const appUrl = `gpxpoifinder://auth/strava?code=${encodeURIComponent(code)}`;
-        messageEl.textContent = 'Retour à l\'application...';
+        messageEl.textContent = 'Connexion réussie ! Retour à l\'application...';
         
         console.log('🔗 Tentative deep link:', appUrl);
-        window.location.href = appUrl;
+        
+        // 💡 On ajoute un petit délai de 800ms
+        setTimeout(() => {
+            window.location.href = appUrl;
+        }, 800);
         
         // Fallback après 3 secondes si l'app ne s'ouvre pas
         setTimeout(() => {
