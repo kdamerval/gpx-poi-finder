@@ -109,6 +109,11 @@
       messageEl.textContent = 'Autorisation refusée';
       spinnerEl.style.display = 'none';
       detailsEl.innerHTML = `<div class="error">Erreur: ${error}<br>Veuillez réessayer depuis l'application.</div>`;
+
+      // 🆕 AJOUT : Redirection automatique vers l'app même en cas d'erreur
+      setTimeout(() => {
+          window.location.href = `gpxpoifinder://auth/strava?error=${error}`;
+      }, 1500); // On laisse 1.5s pour que l'utilisateur lise le message
       
     } else if (code) {
       // ✅ Code reçu avec succès
