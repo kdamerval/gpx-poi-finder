@@ -1,69 +1,196 @@
-Legal Notice & Terms of Service
-Important Note: By using GPX POI Finder, you agree to these Terms of Service and our Privacy Policy.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy & Terms - GPX POI Finder</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      line-height: 1.8;
+      color: #333;
+      background: #f9f9f9;
+    }
+    .header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 40px 30px;
+      border-radius: 20px;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    h1 { margin: 0 0 10px 0; font-size: 2.5rem; }
+    .meta { opacity: 0.9; font-size: 0.95rem; }
+    
+    .lang-switcher {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .lang-switcher a {
+      margin: 5px;
+      padding: 10px 20px;
+      background: #f5f5f5;
+      text-decoration: none;
+      color: #667eea;
+      border-radius: 8px;
+      display: inline-block;
+      transition: all 0.3s;
+      font-weight: 600;
+    }
+    .lang-switcher a:hover, .lang-switcher a.active {
+      background: #667eea;
+      color: white;
+    }
 
-1. Legal Information
-Publisher: K. Damerval
+    .content {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+    }
+    h2 { 
+      color: #667eea; 
+      margin-top: 40px; 
+      font-size: 1.8rem; 
+      border-bottom: 3px solid #667eea; 
+      padding-bottom: 10px; 
+    }
+    h3 { color: #764ba2; margin-top: 25px; font-size: 1.3rem; }
+    ul { margin: 15px 0; padding-left: 25px; }
+    li { margin: 10px 0; }
+    
+    .highlight {
+      background: #fff3cd;
+      padding: 20px;
+      border-left: 4px solid #ffc107;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+    .success { background: #d4edda; border-left-color: #28a745; }
+    .danger { background: #f8d7da; border-left-color: #dc3545; }
+    .info { background: #e7f3ff; border-left-color: #007bff; }
 
-Contact: damerval.kevin@gmail.com
+    a { color: #667eea; text-decoration: none; font-weight: 600; }
+    a:hover { text-decoration: underline; }
+    
+    .footer {
+      text-align: center;
+      margin-top: 50px;
+      padding-top: 30px;
+      border-top: 2px solid #e0e0e0;
+      color: #666;
+    }
 
-Hosting: GitHub Pages (GitHub Inc., 88 Colin P. Kelly Jr St, San Francisco, CA 94107, USA).
+    @media (max-width: 768px) {
+      body { padding: 20px 10px; }
+      .content { padding: 25px 20px; }
+      h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
 
-2. Privacy Policy
-We are committed to ensuring your data remains private. The application is designed to operate locally as much as possible.
+  <div class="header">
+    <h1>🛡️ Privacy & Terms</h1>
+    <p class="meta">GPX POI Finder · Last update: December 20, 2025</p>
+  </div>
 
-📍 GPS Location
+  <div class="lang-switcher">
+    🌍 <strong>Language:</strong> 
+    <a href="index.html">🇫🇷 Français</a>
+    <a href="#" class="active">🇬🇧 English</a>
+  </div>
 
-Used exclusively for the "Around Me" feature.
+  <div class="content">
+    <div class="highlight info">
+      <strong>Important Note:</strong> By using GPX POI Finder, you agree to these Terms of Service and our Privacy Policy.
+    </div>
 
-Never stored on any third-party server.
+    <h2>1. Legal Notice</h2>
+    <p>
+      <strong>Publisher:</strong> K. Damerval<br>
+      <strong>Contact:</strong> <a href="mailto:damerval.kevin@gmail.com">damerval.kevin@gmail.com</a><br>
+      <strong>Hosting:</strong> GitHub Pages (GitHub Inc., 88 Colin P. Kelly Jr St, San Francisco, CA 94107, USA).
+    </p>
 
-Accuracy depends on your device's hardware.
+    <h2>2. Privacy Policy</h2>
+    <p>We are committed to ensuring your data remains private. The application is designed to operate <strong>locally</strong> as much as possible.</p>
 
-🚴 Strava Connection (API)
+    <h3>📍 GPS Location</h3>
+    <div class="highlight success">
+      <ul>
+        <li>Used exclusively for the "Around Me" feature.</li>
+        <li><strong>Never stored</strong> on any third-party server.</li>
+        <li>Accuracy depends on your device's hardware.</li>
+      </ul>
+    </div>
 
-Disclaimer: This app uses the Strava API but is not affiliated with or endorsed by Strava Inc.
+    <h3>🚴 Strava Connection (API)</h3>
+    <div class="highlight info">
+      <strong>Disclaimer:</strong> This app uses the Strava API but is not affiliated with or endorsed by Strava Inc.
+    </div>
+    <ul>
+      <li>We request read-only access to your activities and routes.</li>
+      <li>Your Strava credentials are <strong>never shared with us</strong> (secured via OAuth2 authentication).</li>
+      <li>Retrieved data is processed locally to display it on the map.</li>
+    </ul>
 
-We request read-only access to your activities and routes.
+    <h3>🗺️ Third-Party Services</h3>
+    <ul>
+      <li><strong>OpenStreetMap / Overpass:</strong> Your route coordinates are sent anonymously to identify points of interest (POI).</li>
+      <li><strong>RevenueCat:</strong> Manages your PRO subscriptions anonymously.</li>
+    </ul>
 
-Your Strava credentials are never shared with us (secured via OAuth2 authentication).
+    <h2>3. General Terms of Use (ToS)</h2>
 
-Retrieved data is processed locally to display it on your map.
+    <h3>Responsibility & Safety</h3>
+    <div class="highlight danger">
+      <strong>⚠️ Warning:</strong> GPX POI Finder is a navigation aid. Data (opening hours, business locations) is sourced from OpenStreetMap and may be incorrect or outdated. 
+      <br><br>
+      <strong>The publisher cannot be held responsible for:</strong>
+      <ul>
+        <li>Accidents occurring while using the app.</li>
+        <li>The closure of any suggested establishment.</li>
+        <li>GPS guidance errors.</li>
+      </ul>
+    </div>
 
-🗺️ Third-Party Services
+    <h3>Service Usage</h3>
+    <ul>
+      <li><strong>License:</strong> We grant you a personal, non-transferable right to use the application.</li>
+      <li><strong>Abuse:</strong> Any attempt at reverse-engineering or abusive use of the Overpass API through our interface is strictly prohibited.</li>
+      <li><strong>PRO Subscription:</strong> All purchases are final. Refunds are handled exclusively by the app stores (Google Play / Apple App Store).</li>
+    </ul>
 
-OpenStreetMap / Overpass: Your route coordinates are sent anonymously to identify points of interest (POI).
+    <h2>4. Your Rights (GDPR)</h2>
+    <p>You have full control over your data:</p>
+    <ul>
+      <li><strong>Deletion:</strong> Uninstalling the application deletes all local preferences.</li>
+      <li><strong>Strava Revocation:</strong> You can disconnect the app at any time through your Strava account settings.</li>
+    </ul>
 
-RevenueCat: Manages your PRO subscriptions anonymously.
+    <h2>5. Contact</h2>
+    <div class="highlight">
+      <p>For any questions or data-related requests:</p>
+      <p>
+        📧 Email: <a href="mailto:damerval.kevin@gmail.com">damerval.kevin@gmail.com</a><br>
+        🌐 Project: <a href="https://kdamerval.github.io/gpx-poi-finder/">gpxpoifinder.app</a>
+      </p>
+    </div>
+  </div>
 
-3. General Terms of Use (ToS)
-Responsibility & Safety ⚠️ Warning: GPX POI Finder is a navigation aid. Data (opening hours, business locations) is sourced from OpenStreetMap and may be incorrect or outdated.
-
-The publisher cannot be held responsible for:
-
-Accidents occurring while using the app.
-
-The closure of any suggested establishment.
-
-GPS guidance errors.
-
-Service Usage
-
-License: We grant you a personal, non-transferable right to use the application.
-
-Abuse: Any attempt at reverse-engineering or abusive use of the Overpass API through our interface is strictly prohibited.
-
-PRO Subscription: All purchases are final. Refunds are handled exclusively by the app stores (Google Play / Apple App Store).
-
-4. Your Rights (GDPR)
-You have full control over your data:
-
-Deletion: Uninstalling the application deletes all local preferences.
-
-Strava Revocation: You can disconnect the app at any time through your Strava account settings.
-
-5. Contact
-For any questions or data-related requests:
-
-📧 Email: damerval.kevin@gmail.com
-
-🌐 Project: gpxpoifinder.app
+  <div class="footer">
+    <p>
+      GPX POI Finder © 2025 · 
+      <a href="../">🏠 Home</a>
+    </p>
+  </div>
+</body>
+</html>
